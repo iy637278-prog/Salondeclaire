@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>살롱 드 끌레르 · 가격표</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Cormorant+Garamond:wght@500;600&display=swap">
+<style>
+  :root{
+    --bg:#fbf6f1; --card:#ffffff; --line:#efe3d8; --ink:#4a4540; --sub:#8a8078;
+    --accent:#c98f7a; --tint:#f6e7de; --sale:#c0624a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',system-ui,sans-serif;line-height:1.5}
+  header{text-align:center;padding:48px 20px 24px}
+  header .en{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,8vw,52px);letter-spacing:.02em;margin:0;color:#5a524b}
+  header .ko{margin:6px 0 0;font-size:18px;color:var(--sub);letter-spacing:.15em}
+  header .rule{width:64px;height:2px;background:var(--accent);margin:20px auto 0;opacity:.7}
+  nav{position:sticky;top:0;z-index:5;background:rgba(251,246,241,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  nav .in{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;max-width:900px;margin:auto;scrollbar-width:none}
+  nav .in::-webkit-scrollbar{display:none}
+  nav a{flex:none;padding:6px 14px;border-radius:999px;background:var(--tint);color:#8b6455;text-decoration:none;font-size:14px;font-weight:500}
+  nav a:active{background:var(--accent);color:#fff}
+  main{max-width:900px;margin:0 auto;padding:20px 16px 40px;display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:720px){main{grid-template-columns:1fr 1fr;gap:20px}}
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-margin-top:64px}
+  section h2{margin:0;padding:12px 18px;font-size:16px;font-weight:700;background:var(--tint);color:#8b6455;letter-spacing:.08em}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 18px;border-top:1px solid var(--line)}
+  .row:first-of-type{border-top:0}
+  .name small{display:block;color:var(--sub);font-size:12px}
+  .price{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
+  .price .old{display:block;font-weight:400;font-size:12px;color:var(--sub);text-decoration:line-through}
+  .price.sale{color:var(--sale)}
+  .sub{padding:8px 18px 4px;font-size:13px;font-weight:700;color:var(--accent);border-top:1px solid var(--line)}
+  .sub:first-of-type{border-top:0}
+  .note{padding:8px 18px 12px;font-size:12px;color:var(--sub)}
+  .wide{grid-column:1/-1}
+  .notice{background:var(--tint);border:0;padding:16px 20px;font-size:14px;color:#7a5e50}
+  .notice ul{margin:0;padding-left:18px}
+  .notice li+li{margin-top:4px}
+  .info{padding:6px 18px 14px}
+  .info dl{margin:0}
+  .info .item{display:flex;gap:14px;padding:10px 0;border-top:1px solid var(--line);align-items:baseline}
+  .info .item:first-child{border-top:0}
+  .info dt{flex:none;width:44px;font-size:13px;font-weight:700;color:var(--accent)}
+  .info dd{margin:0;word-break:keep-all}
+  .info a{color:#8b6455}
+  .btns{display:flex;gap:10px;flex-wrap:wrap;padding:4px 18px 18px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:14px}
+  .btn.ghost{background:var(--tint);color:#8b6455}
+  footer{text-align:center;color:var(--sub);font-size:12px;padding:0 20px 40px}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="en">salon de claire</h1>
+  <p class="ko">살롱 드 끌레르</p>
+  <div class="rule"></div>
+</header>
+
+<nav><div class="in">
+  <a href="#cut">커트</a><a href="#perm">일반펌</a><a href="#heat">열펌</a>
+  <a href="#color">염색</a><a href="#dry">드라이</a><a href="#clinic">클리닉</a><a href="#contact">위치·연락처</a>
+</div></nav>
+
+<main>
+  <section id="cut">
+    <h2>커트</h2>
+    <div class="row"><span class="name">남성컷</span><span class="price sale"><span class="old">20,000</span>19,000</span></div>
+    <div class="row"><span class="name">여성컷</span><span class="price sale"><span class="old">22,000</span>21,000</span></div>
+    <div class="row"><span class="name">디자인컷</span><span class="price sale"><span class="old">25,000</span>24,000</span></div>
+    <div class="row"><span class="name">학생컷</span><span class="price sale"><span class="old">18,000</span>17,000</span></div>
+    <div class="row"><span class="name">다운펌 + 컷</span><span class="price">50,000</span></div>
+  </section>
+
+  <section id="color">
+    <h2>염색</h2>
+    <div class="row"><span class="name">뿌리염색</span><span class="price">45,000</span></div>
+    <div class="row"><span class="name">뿌리염색 + 컷</span><span class="price">55,000</span></div>
+    <div class="row"><span class="name">남성 전체 컬러</span><span class="price">50,000</span></div>
+    <div class="row"><span class="name">여성 전체 컬러<small>기장 추가 별도</small></span><span class="price">80,000</span></div>
+  </section>
+
+  <section id="perm">
+    <h2>일반펌</h2>
+    <div class="sub">남성 일반펌</div>
+    <div class="row"><span class="name">컷 + 펌</span><span class="price">60,000</span></div>
+    <div class="row"><span class="name">컷 + 다운펌 + 펌</span><span class="price">70,000</span></div>
+    <div class="sub">여성 일반펌</div>
+    <div class="row"><span class="name">컷 + 펌<small>기장 추가 별도</small></span><span class="price">65,000</span></div>
+  </section>
+
+  <section id="dry">
+    <h2>드라이</h2>
+    <div class="row"><span class="name">매직 / 롤 드라이<small>기장 추가 별도</small></span><span class="price">20,000</span></div>
+    <div class="row"><span class="name">샴푸</span><span class="price">10,000</span></div>
+  </section>
+
+  <section id="heat">
+    <h2>열펌</h2>
+    <div class="row"><span class="name">디지털 / 셋팅</span><span class="price">140,000</span></div>
+    <div class="row"><span class="name">매직<small>기장 추가 별도</small></span><span class="price">140,000</span></div>
+    <div class="row"><span class="name">볼륨매직</span><span class="price">160,000</span></div>
+    <div class="row"><span class="name">매직셋팅</span><span class="price">180,000</span></div>
+  </section>
+
+  <section id="clinic">
+    <h2>클리닉</h2>
+    <div class="row"><span class="name">두피 케어</span><span class="price">40,000</span></div>
+    <div class="row"><span class="name">두발재생 클리닉</span><span class="price">50,000</span></div>
+  </section>
+
+  <section id="contact" class="wide">
+    <h2>찾아오시는 길</h2>
+    <div class="info"><dl>
+      <div class="item"><dt>주소</dt><dd>경기 과천시 과천대로8길 35 지층 108호</dd></div>
+      <div class="item"><dt>전화</dt><dd><a href="tel:025071654">02-507-1654</a></dd></div>
+    </dl></div>
+    <div class="btns">
+      <a class="btn" href="https://naver.me/5jX8gkgl" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+      <a class="btn ghost" id="callBtn" href="tel:025071654">전화하기</a>
+    </div>
+    <p class="note" id="callMsg" aria-live="polite" style="padding-top:0;min-height:1.5em"></p>
+  </section>
+
+  <section class="wide notice">
+    <ul>
+      <li>기장 추가는 어깨선 기준입니다.</li>
+      <li>현금 결제 시 추가 세일 혜택이 있습니다.</li>
+      <li>커트 시 샴푸는 3,000원 추가입니다.</li>
+    </ul>
+  </section>
+</main>
+<footer>단위: 원 · 가격은 매장 사정에 따라 변경될 수 있어요</footer>
+<script>
+  (function(){
+    var btn=document.getElementById('callBtn'), msg=document.getElementById('callMsg'), num='02-507-1654';
+    btn.addEventListener('click',function(){
+      // 전화 연결(tel:)은 기본 동작으로 시도하고, 막히는 환경을 위해 번호도 함께 복사
+      var done=function(ok){
+        msg.textContent = ok ? num+' 번호가 복사됐어요. 전화 앱에 붙여 넣어 주세요.' : '전화번호: '+num;
+      };
+      try{
+        navigator.clipboard.writeText(num).then(function(){done(true)},function(){done(false)});
+      }catch(e){done(false)}
+    });
+  })();
+</script>
+</body>
+</html>
