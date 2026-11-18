@@ -31,6 +31,11 @@
   .price{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
   .price .old{display:block;font-weight:400;font-size:12px;color:var(--sub);text-decoration:line-through}
   .price.sale{color:var(--sale)}
+  .price.dual{font-weight:400;text-align:right}
+  .price.dual .line{display:block;font-variant-numeric:tabular-nums}
+  .price.dual em{font-style:normal;font-size:12px;color:var(--sub);margin-right:8px}
+  .price.dual .cash{font-weight:700;color:var(--sale)}
+  .price.dual .cash em{color:var(--sale)}
   .sub{padding:8px 18px 4px;font-size:13px;font-weight:700;color:var(--accent);border-top:1px solid var(--line)}
   .sub:first-of-type{border-top:0}
   .note{padding:8px 18px 12px;font-size:12px;color:var(--sub)}
@@ -66,10 +71,11 @@
 <main>
   <section id="cut">
     <h2>커트</h2>
-    <div class="row"><span class="name">남성컷</span><span class="price sale"><span class="old">20,000</span>19,000</span></div>
-    <div class="row"><span class="name">여성컷</span><span class="price sale"><span class="old">22,000</span>21,000</span></div>
-    <div class="row"><span class="name">디자인컷</span><span class="price sale"><span class="old">25,000</span>24,000</span></div>
-    <div class="row"><span class="name">학생컷</span><span class="price sale"><span class="old">18,000</span>17,000</span></div>
+    <div class="note" style="padding-bottom:0">카드 결제가 / sale</div>
+    <div class="row"><span class="name">남성컷</span><span class="price dual"><span class="line"><em>카드</em>20,000</span><span class="line cash"><em>sale</em>19,000</span></span></div>
+    <div class="row"><span class="name">여성컷</span><span class="price dual"><span class="line"><em>카드</em>22,000</span><span class="line cash"><em>sale</em>21,000</span></span></div>
+    <div class="row"><span class="name">디자인컷</span><span class="price dual"><span class="line"><em>카드</em>25,000</span><span class="line cash"><em>sale</em>24,000</span></span></div>
+    <div class="row"><span class="name">학생컷</span><span class="price dual"><span class="line"><em>카드</em>18,000</span><span class="line cash"><em>sale</em>17,000</span></span></div>
     <div class="row"><span class="name">다운펌 + 컷</span><span class="price">50,000</span></div>
   </section>
 
@@ -126,7 +132,7 @@
   <section class="wide notice">
     <ul>
       <li>기장 추가는 어깨선 기준입니다.</li>
-      <li>현금 결제 시 추가 세일 혜택이 있습니다.</li>
+      <li>현금 결제 시 추가 세일 혜택이 있습니다. (커트는 sale 가격을 따로 표시했어요)</li>
       <li>커트 시 샴푸는 3,000원 추가입니다.</li>
     </ul>
   </section>
